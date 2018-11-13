@@ -1,0 +1,21 @@
+body#multi{
+    text-align: center;
+}
+
+#loading-status {
+    margin: auto;
+    width: 300px;
+    border: 1px #669cb8 solid;
+    height: 15px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#E1E9EE), to(white)); 
+    padding: 1px; 
+}
+
+#percent{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#7BC3FF), color-stop(0.5, #42A9FF), to(#7BC3FF));
+    height: 100%;
+}
+
+#progress{
+    width: 300px;
+}

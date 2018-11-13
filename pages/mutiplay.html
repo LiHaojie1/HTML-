@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mutiplay</title>
+    <script type="text/javascript" src="../js/video.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/video.css">
+</head>
+
+<body id="multi" onload="myPlay()" onkeydown="myKey(event)">
+    <div style="text-align:center">
+        <video id="videoplace" width="360px" onclick="myPause()">
+            <source src="../src/videos/mov_bbb.mp4" type="video/mp4">
+            あなたのブラウザはこのビデオを再生できません。
+        </video>
+    </div>
+
+    <div id="loading-status">
+        <div id="percent" style="width: 0px;"></div>
+    </div>
+
+    <div style="text-align:center">
+        <span id="videotime"></span>
+        <br />
+        <progress id="progress" value="0" max="100"></progress>
+    </div>
+
+    <div style="text-align:center">
+        <button type="button" onclick="myPause()">再生・一時中止</button>
+        <button type="button" onclick="myStop()">中止</button>
+        <button type="button" onclick="mySmall()">縮小</button>
+        <button type="button" onclick="myReset()">元のサイズ</button>
+        <button type="button" onclick="myBig()">拡大</button>
+        <button type="button" onclick="myFullscreen()">フルスクリーン</button>
+    </div>
+
+    <div>
+        <button type="button" onclick="myVolDown()">-</button>
+        <span>Volume:</span>
+        <span id="myVolume">100</span>
+        <button type="button" onclick="myVolUp()">+</button>
+        <button type="button" onclick="myMute()">🚫</button>
+    </div>
+
+    <br />
+
+    <div style="text-align:center">
+        <button type="button" onclick="showMP4()">現れ！</button>
+    </div>
+    <a href="../main.html">戻す</a>
+</body>
+
+</html>

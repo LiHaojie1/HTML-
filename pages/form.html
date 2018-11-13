@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <script type="text/javascript" src="../js/form.js"></script>
+</head>
+
+<body>
+    <p>入力してください：</p>
+    <input id="input1" type="number" min="0" max="100" required>
+    <!--required == empty NG-->
+    <button type="button" onclick="myForm()">提出</button>
+    <p id="output1"></p>
+
+    <form>
+        名前：<input type="text", name = "inname">
+        <br />
+            男<input type="radio" name="sex" value="male">
+            女<input type="radio" name="sex" value="female">
+        <br />
+        趣味：
+        <br />
+        音楽<input type="checkbox" name="music">
+        ゲーム<input type="checkbox" name="game">
+        アニメ<input type="checkbox" name="anime">
+        <br />
+        状態：
+        <select name="status">
+            <option value="0">----</option>
+            <option value="free">自由</option>
+            <option value="work">社会人</option>
+            <option value="retire">定年後</option>
+        </select>
+    </form>
+    <a href="../main.html">戻す</a>
+</body>
+
+</html>

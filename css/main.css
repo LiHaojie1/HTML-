@@ -1,0 +1,71 @@
+
+/*これからのstyleは「main.html」向けです*/
+body#main{
+    background-image: url("../src/images/emoji.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 10%;
+    background-position: right top;
+}
+
+h1.center, h2.center{                                                          /*use class to specify elements*/
+    text-align: center;
+}
+
+#footer{
+    background-color: orange;
+    border-style: groove;
+}
+
+#time{
+    position: fixed;
+    padding: 7px;
+    bottom: 0;
+    left: 0;
+}
+
+div#sign{
+    position: fixed;
+    padding: 7px;
+    bottom: 0;
+    right: 0;
+}
+
+ul{
+    width: 100px;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    width: 200px;
+    background-color: aqua;
+    margin-bottom: 1px;
+    text-indent: 10px;
+    
+}
+
+/*
+change style when cursor pointing at an element.
+background-color: just background color
+color: font color
+*/
+a:hover{
+    background-color: orange;
+    color: white;         
+}
+/*これからのstyleは「ChangeStyle.html」向けです*/
+
+#changetext{
+    text-align: center;
+    border-style: dotted;
+    border-color: cyan;
+    height: 100px;
+    width: 300px;
+}

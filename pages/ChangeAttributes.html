@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Attributes</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        a:link{
+            color: white;
+        }
+        a:visited{
+            color:powderblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JSはHTMLの変数を変えられる</h2>
+    <button type="button" onclick="document.getElementById('img1').src='../src/images/pic_bulbon.gif'">光あれ！</button>
+    <button type="button" onclick="document.getElementById('img1').src='../src/images/pic_bulboff.gif'">闇に落ちろ！</button>
+    <img id="img1" src="../src/images/pic_bulboff.gif" style="width: 100px" />
+    <br />
+    <a href="../main.html">戻す</a>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSOutput</title>
+    <script type="text/javascript" src="../js/jsoutput.js"></script>
+</head>
+
+<body>
+
+    <h3>5+6=?</h3>
+    <button type="button" onclick="writeToHtml()">Write to HTML</button>
+    <!--Never call document.write after the document has finished loading. It will overwrite the whole document.-->
+    <p id="recjs1"></p>
+    <button type="button" onclick="writeToHtmlElements()">Write to writeToHtmlElements</button><br />
+    <button type="button" onclick="writeToAlert()">Write to Alert</button><br />
+    <button type="button" onclick="writeToConsole()">Write to Console</button><br />
+    <script>
+        developer.stamp();
+    </script>
+    <a href="../main.html">戻す</a>
+</body>
+
+</html>
