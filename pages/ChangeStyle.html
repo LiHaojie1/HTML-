@@ -4,6 +4,7 @@
 <head>
     <title>ChangeStyle</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="../js/changestyle.js"></script>
     <!--use main.css-->
 </head>
 
@@ -16,6 +17,8 @@
     <button type="button" onclick="document.getElementById('ChangeStyle1').style.color='orange'">色付けよ！</button>
     <button type="button" onclick="document.getElementById('ChangeStyle1').style.visibility='hidden'">消えろ！</button>
     <button type="button" onclick="document.getElementById('ChangeStyle1').style.visibility='visible'">甦ろ！</button>
+    <br />
+    <input type="text" id="fname" onchange="upCase()">
     <br />
     <a href="../main.html">戻す</a>
 </body>

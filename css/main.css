@@ -15,6 +15,7 @@ h1.center, h2.center{                                                          /
 #footer{
     background-color: orange;
     border-style: groove;
+    text-align: center;
 }
 
 #time{

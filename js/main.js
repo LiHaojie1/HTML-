@@ -4,15 +4,14 @@ function showTime() {
     document.getElementById("time").innerHTML = myDate.toLocaleString() + "(" + myWeek[myDate.getDay()] + ")";
     setTimeout("showTime()", 1000);
 }
-function showTimeToGo(){
+function showTimeToGo(){    //show time left to go home.
     var myDate = new Date();
-    var myHour = myDate.getHours;
+    var myHour = myDate.getHours();
     var myMin = myDate.getMinutes();
     var mySec = myDate.getSeconds();
-    var ans = myHour*3600 + myMin*60 + mySec - 72000;
-    console.log(ans);
+    var ans =68400-(myHour*3600 + myMin*60 + mySec);
     if(ans >= 0){
-        document.getElementById("timeToGo").innerHTML = (ans-ans%3600)/3600 + "h" +(ans%3600) /60 + "m" + (ans%60) +"s";
+        document.getElementById("timeToGo").innerHTML = (ans-ans%3600)/3600 + "h" +(ans%3600-ans%60) /60 + "m" + (ans%60) +"s";
     }else{
         document.getElementById("timeToGo").innerHTML = "Go Home Now!";
     }
