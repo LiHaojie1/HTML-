@@ -1,5 +1,5 @@
 function writeToHtml() {
-    document.write(<p>5 + 6</p>);
+    document.write(11);
 }
 
 function writeToHtmlElements() {
